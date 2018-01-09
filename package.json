@@ -1,0 +1,30 @@
+{
+  "name": "resizable-canvas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run build:babel && npm run build:flow",
+    "build:babel": "babel src/ -d lib",
+    "flow:watch": "flow-watch",
+    "build:flow": "flow-copy-source src lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renevanderark/resizable-canvas.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renevanderark/resizable-canvas/issues"
+  },
+  "homepage": "https://github.com/renevanderark/resizable-canvas#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "flow": "^0.2.3",
+    "flow-copy-source": "^1.2.1",
+    "flow-watch": "^1.1.1"
+  }
+}
